@@ -1,0 +1,6 @@
+dthume Shared Resources
+==========================
+David Thomas Hume
+:Author Initials: DTH
+
+Shared Resources for projects under the org.dthume group.
