@@ -1,100 +1,134 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
     http://maven.apache.org/POM/4.0.0
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<prerequisites>
-		<maven>3.0</maven>
-	</prerequisites>
+  <prerequisites>
+    <maven>3.0</maven>
+  </prerequisites>
 
-	<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.dthume</groupId>
-	<artifactId>dthume-shared-resources</artifactId>
-	<version>0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>org.dthume</groupId>
+  <artifactId>dthume-shared-resources</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>org.dthume Shared Resources</name>
-	<inceptionYear>2011</inceptionYear>
-	<url>https://github.com/dthume/${project.artifactId}</url>
+  <name>org.dthume Shared Resources</name>
+  <inceptionYear>2011</inceptionYear>
+  <url>https://github.com/dthume/${project.artifactId}</url>
 
-	<description>
+  <description>
     Contains common resources, e.g. docbook layers and license files
     used by groups under org.dthume.
   </description>
 
-	<licenses>
-		<license>
-			<name>Apache</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-		</license>
-	</licenses>
+  <licenses>
+    <license>
+      <name>Apache</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
 
-	<scm>
-		<connection>scm:git:git://github.com/dthume/${project.artifactId}.git</connection>
-		<developerConnection>scm:git:https://dthume@github.com/dthume/${project.artifactId}.git</developerConnection>
-		<url>https://github.com/dthume/${project.artifactId}</url>
-	</scm>
+  <scm>
+    <connection>scm:git:git://github.com/dthume/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:https://dthume@github.com/dthume/${project.artifactId}.git</developerConnection>
+    <url>https://github.com/dthume/${project.artifactId}</url>
+  </scm>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/dthume/${project.artifactId}/issues</url>
-	</issueManagement>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/dthume/${project.artifactId}/issues</url>
+  </issueManagement>
 
-	<distributionManagement>
-		<site>
-			<id>dthu.me.web</id>
-			<name>dthume Maven Website</name>
-			<url>
+  <distributionManagement>
+    <site>
+      <id>dthu.me.web</id>
+      <name>dthume Maven Website</name>
+      <url>
         scp://dthu.me/home/dth/sites/org/dthume/${project.artifactId}/${project.version}/
       </url>
-		</site>
-	</distributionManagement>
+    </site>
+  </distributionManagement>
 
-	<developers>
-		<developer>
-			<id>dth</id>
-			<name>David Thomas Hume</name>
-			<email>dth@dthu.me</email>
-			<url>http://dthu.me</url>
-			<organization>Kana</organization>
-			<organizationUrl>http://www.kana.com</organizationUrl>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-			<timezone>0</timezone>
-		</developer>
-	</developers>
+  <developers>
+    <developer>
+      <id>dth</id>
+      <name>David Thomas Hume</name>
+      <email>dth@dthu.me</email>
+      <url>http://dthu.me</url>
+      <organization>Kana</organization>
+      <organizationUrl>http://www.kana.com</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>0</timezone>
+    </developer>
+  </developers>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.lang.version>1.5</java.lang.version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- Plugin versioning -->
-		<org.apache.maven.plugins.maven-release-plugin.version>2.2.1</org.apache.maven.plugins.maven-release-plugin.version>
-		<org.apache.maven.plugins.maven-site-plugin.version>3.0-beta-3</org.apache.maven.plugins.maven-site-plugin.version>
-	</properties>
+    <generated.resources.directory>${project.build.directory}/generated-resources</generated.resources.directory>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>${org.apache.maven.plugins.maven-site-plugin.version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>${org.apache.maven.plugins.maven-release-plugin.version}</version>
-					<configuration>
-						<localCheckout>true</localCheckout>
-						<pushChanges>false</pushChanges>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+    <!-- Plugin versioning -->
+    <org.apache.maven.plugins.maven-release-plugin.version>2.2.1</org.apache.maven.plugins.maven-release-plugin.version>
+    <org.apache.maven.plugins.maven-site-plugin.version>3.0-beta-3</org.apache.maven.plugins.maven-site-plugin.version>
+    <org.codehaus.mojo.xml-maven-plugin.version>1.0</org.codehaus.mojo.xml-maven-plugin.version>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>${generated.resources.directory}</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+        <version>${org.codehaus.mojo.xml-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>compile-titlespec</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>transform</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <transformationSets>
+            <transformationSet>
+              <dir>src/main/xml</dir>
+              <stylesheet>src/main/xsl/titlepage.xsl</stylesheet>
+              <outputDir>${generated.resources.directory}</outputDir>
+            </transformationSet>
+          </transformationSets>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-site-plugin.version}</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-release-plugin.version}</version>
+        <configuration>
+          <localCheckout>true</localCheckout>
+          <pushChanges>false</pushChanges>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

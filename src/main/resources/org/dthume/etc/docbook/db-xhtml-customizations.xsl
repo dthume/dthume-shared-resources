@@ -30,13 +30,17 @@
   <xsl:import href="urn:docbkx:stylesheet/highlight.xsl" />
 
   <!-- Customisation Stylesheets -->
+  <xsl:import href="db-xhtml-titlepage.xsl" />
+  <xsl:import href="db-xhtml-custom-titlepage.xsl" />
+  
   <xsl:import href="db-xhtml-highlight.xsl" />
 
   <!-- Customisation Parameters -->
   <xsl:param name="abstract.notitle.enabled" select="1" />
 
   <xsl:param name="admon.graphics" select="1" />
-  <xsl:param name="admon.graphics.path" select="'/resources/images/icons/simplicio-1.0/64x64/'" />
+  <xsl:param name="admon.graphics.path"
+    select="'/resources/images/icons/simplicio-1.0/64x64/'" />
   <xsl:param name="admon.graphics.extension" select="'.png'" />
   <xsl:param name="admon.textlabel" select="1" />
 
