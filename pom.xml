@@ -19,6 +19,7 @@
 
   <name>org.dthume Shared Resources</name>
   <inceptionYear>2011</inceptionYear>
+  <url>http://dthu.me/projects/org/dthume/${project.artifactId}/${project.version}/</url>
 
   <description>
     Contains common resources, e.g. docbook layers and license files
