@@ -11,11 +11,12 @@
   <parent>
     <groupId>org.dthume</groupId>
     <artifactId>dthume-parent</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>dthume-shared-resources</artifactId>
   <packaging>jar</packaging>
+  <version>0.1-SNAPSHOT</version>
 
   <name>org.dthume Shared Resources</name>
   <inceptionYear>2011</inceptionYear>
