@@ -25,6 +25,16 @@
     used by groups under org.dthume.
   </description>
 
+  <distributionManagement>
+    <site>
+      <id>dthu.me.web</id>
+      <name>org.dthume Maven Website</name>
+      <url>
+        file:///opt/maven/sites/org/dthume/${project.artifactId}/${project.version}/
+      </url>
+    </site>
+  </distributionManagement>
+
   <properties>
     <generated.resources.directory>${project.build.directory}/generated-resources</generated.resources.directory>
   </properties>
@@ -73,6 +83,10 @@
           <localCheckout>true</localCheckout>
           <pushChanges>false</pushChanges>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
