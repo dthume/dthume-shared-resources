@@ -19,7 +19,7 @@
 
   <name>org.dthume Shared Resources</name>
   <inceptionYear>2011</inceptionYear>
-  <url>http://dthu.me/projects/org/dthume/${project.artifactId}/${project.version}/</url>
+  <url>https://dthume.github.com/dthume-shared-resources/</url>
 
   <description>
     Contains common resources, e.g. docbook layers and license files
@@ -30,9 +30,7 @@
     <site>
       <id>dthu.me.web</id>
       <name>org.dthume Maven Website</name>
-      <url>
-        file:///opt/maven/sites/org/dthume/${project.artifactId}/${project.version}/
-      </url>
+      <url>https://github.com/dthume/${project.artifactId}/</url>
     </site>
   </distributionManagement>
 
