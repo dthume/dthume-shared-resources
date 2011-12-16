@@ -4,3 +4,6 @@ David Thomas Hume
 :Author Initials: DTH
 
 Shared Resources for projects under the org.dthume group.
+
+The Maven generated project site can be found
+http://dthume.github.com/dthume-shared-resources[here].
