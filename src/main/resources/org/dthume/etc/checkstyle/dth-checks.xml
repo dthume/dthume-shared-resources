@@ -46,8 +46,15 @@
           <property name="scope" value="package" />
           <property name="tokens" value="METHOD_DEF" />
         </module>
-        <module name="JavadocType"/>
-        <module name="JavadocVariable"/>
+        
+        <module name="JavadocType">
+          <property name="scope" value="package" />
+        </module>
+        
+        <module name="JavadocVariable">
+          <property name="scope" value="package" />
+        </module>
+        
         <module name="JavadocStyle"/>
         
 
@@ -89,7 +96,10 @@
 
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
-        <module name="LineLength"/>
+        <module name="LineLength">
+          <property name="ignorePattern" value="(^ *\* *\{?@[^ ]+.*$|^import)"/>
+        </module>
+        
         <module name="MethodLength"/>
         <module name="ParameterNumber"/>
 
@@ -152,6 +162,7 @@
         <module name="ArrayTypeStyle"/>
         <module name="FinalParameters"/>
         <module name="TodoComment"/>
+        <module name="TrailingComment"/>
         <module name="UpperEll"/>
 
     </module>
