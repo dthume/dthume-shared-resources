@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+<!--
+   <Match>
+      <Class name="*Mojo" />
+      <Bug code="UWF_UNWRITTEN_FIELD" />
+   </Match>
+ -->
+</FindBugsFilter>

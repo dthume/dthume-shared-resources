@@ -26,7 +26,4 @@
   <rule ref="rulesets/typeresolution.xml" />
   <rule ref="rulesets/unusedcode.xml" />
   
-  <!-- JSP -->
-  <rule ref="rulesets/basic-jsp.xml" />
-  
 </ruleset>
